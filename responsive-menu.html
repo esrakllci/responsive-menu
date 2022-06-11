@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Responsive</title>
+<style type="text/css">
+#navbar {
+	height: 50px;
+	width: 1040px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: burlywood;
+}
+	#navbar ul {
+
+		margin-top: 0px;
+		padding-left: 0px;
+		list-style-type: none;
+		
+	}
+	
+	#navbar ul li {
+	    width:250px;
+		height:50px;
+		display:block;
+		float:left;
+		text-align: center;
+		line-height: 50px;		
+	}
+	#navbar ul li:hover {
+		background-color:azure; 
+	}
+	@media (max-width:768px){
+		
+	#navbar span {
+		border:solid 2px red;
+		margin-bottom:2px;
+		margin-top:4px;
+		width: 50px;
+		float: left;
+		clear:both;
+		
+	}
+	
+		#navbar ul li {
+			float: none;
+			position: relative;
+			display: none;
+			clear: both;
+			border:solid 2px red;
+		}
+		#navbar:hover ul li {
+			display: block;
+			position:relative;
+			clear: both;
+			background-color:blueviolet; 
+		}
+</style>
+</head>
+
+<body>
+<div id="navbar">
+<span></span>
+<span></span>
+<span></span>
+	<ul><li>Anasayfa</li><li>Hakkımızda</li>
+  	<li>Referans</li><li>İletişim</li></ul>
+</div>
+
+</body>
+</html>
